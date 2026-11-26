@@ -1,0 +1,34 @@
+{
+  "name": "votechain",
+  "version": "1.0.0",
+  "description": "VoteChain - Blockchain-based anonymous voting with zero-knowledge proofs (Solidity, Polygon, React, Web3.js) - Group 19",
+  "scripts": {
+    "zk:setup": "node scripts/setup-zk.js",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "seed": "hardhat run scripts/seed.js --network localhost",
+    "demo:cli": "hardhat run scripts/demo-cli.js",
+    "deploy:amoy": "hardhat run scripts/deploy.js --network amoy",
+    "frontend:install": "cd frontend && npm install",
+    "frontend": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "circom2": "^0.2.23",
+    "circomlib": "^2.0.5",
+    "circomlibjs": "^0.1.7",
+    "snarkjs": "^0.7.6"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "chai": "^4.5.0",
+    "dotenv": "^16.6.1",
+    "ethers": "^6.17.0",
+    "hardhat": "^2.22.17",
+    "solc": "^0.8.20"
+  }
+}

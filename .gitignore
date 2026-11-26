@@ -1,0 +1,8 @@
+node_modules/
+cache/
+artifacts/
+frontend/dist/
+build/pot_*.ptau
+build/vote_0.zkey
+demo-credentials.json
+.env
